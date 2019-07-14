@@ -1,0 +1,1069 @@
+@font-face{
+	font-family: "BRUSHSTROKE PLAIN";
+	src: url(../fonts/BRUSHSTP-webfont.woff) format('woff');
+	src: url(../fonts/BRUSHSTP-webfont.ttf) format("truetype");
+}
+
+h1{
+	font-size: 24px;
+	font-family: "BRUSHSTROKE PLAIN"
+}
+
+
+/* Google Api link href is included in html file*/
+h2{
+	font-family: 'Lemonada', cursive;
+}
+
+
+/*
+Font Styling
+
+font-weight 100 - 900. normal 100, keyword bold=700
+
+font-style:normal;
+font-style:italic;
+font-style:oblique;
+
+text-decoration:underline;
+text-decoration:overline;
+text-decoration:line-through;
+text-decoration:none;
+*/
+p{
+	font-family: 'Lemonada', cursive;
+	font-weight: 600;
+	font-style:italic;
+	text-decoration:none;
+	
+
+}
+
+
+/*
+Text transformation:; upper case, lower case, capitilization, spacing
+
+text-transform:capitalize;
+text-transform:lowercase;
+text-transform:uppercase;
+text-transform:none;
+
+
+letter-spacing: 15px;
+word-spacing: 10px;
+*/
+
+h4{
+	text-transform: capitalize;
+	letter-spacing: 15px ;  
+	letter-spacing: 30px ; 
+}
+
+/* text-alignment
+
+text-align: center;
+text-align: right;
+text-align: left;
+text-align: justify;
+
+spacing of lines 
+line-height: 45px;
+Font size * value
+line-height: 1.5;
+
+line-height: 150%;
+
+*/
+h5{	
+	text-align: center;
+	line-height: 45px;
+}
+
+
+/*color
+
+https://www.w3schools.com/css/css_colors.asp
+can be name, hex, rgb etc...
+Hex is prefered
+
+color: Gold;
+color: rgb(0,0,0);
+color: #ff00ff;
+
+*/
+
+h6{
+	font-size: 32px;
+	color: #ff00ff;
+}
+
+
+
+/*list styling
+
+unordered
+
+list-style-type: disc;
+list-style-type: circle;
+list-style-type: square;
+list-style-type: none;
+
+ordered
+
+list-style-type: decimal;
+list-style-type: decimal-leading-zero;
+list-style-type: lower-alpha
+list-style-type: upper-alpha;
+list-style-type: upper-roman;
+list-style-type: lower-roman;
+
+
+list-style-image:url(href="https://ewedit.files.wordpress.com/2018/03/dawson.jpg");
+
+Sets boundies for word wrapping in lists
+list-style-position: outside;
+list-style-position: inside;
+*/
+
+ul{
+	list-style-position: inside;
+	list-style-type: square;
+}
+
+ol{
+	list-style-type: upper-roman;
+}
+
+
+/*classes can be specified in tags and given the same formatting
+
+*/
+.sample{
+	color: blue;
+	text-align: center;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+.change{
+	color: orange;
+	font-weight: bold;
+}
+/* multiple classes can be assigned to the same tab
+
+<p class= "green-text line-text">
+*/
+
+.green-text{
+	color: green;
+}
+
+.line-text{
+	text-decoration:underline;
+}
+
+/* unique class 
+
+can be used to href back to like 
+<a href="#main-heading">Back to Main-heading</a>
+*/
+
+#special-class{
+	color: olive;
+
+}
+
+#main-heading{
+	color: red;
+}
+
+
+/*span
+
+Text can be wrapped in span tags for formatting within p blocks. 
+Can also be used with classes
+
+<span>	labore et </span>
+
+*/
+span{
+	color: orange;
+}
+
+/* 
+div can be used to give block formatting across tags in html
+
+<div> tag surrounds the block you want to affect
+
+*/
+
+
+
+.blue-block{
+	background-color: blue;
+
+}
+
+/*
+float and clear
+float moves div objects over
+float - left right none
+clear - ignores the float
+
+*/
+
+.float{
+	background-color: orange;
+	height: 200px;
+	width: 50%;
+	float: right;
+}
+
+.clear{
+	clear: both;
+}
+
+
+img{
+	float: left;
+}
+
+
+/*border
+Border:Width, color style
+
+width can be applied in various ways. 
+4 values will rotate from the top clockwise
+
+shorthand
+border-width, style then color
+
+border 10px double grey
+*/
+
+.border{
+	width: 300px;
+	height: 200px;
+	background-color: orange;
+	border-width: 10px;
+	border-style: double;
+	border-color: #00ff00
+
+}
+
+/*
+padding
+
+space between border and content
+
+can specify top, bottom etc like border
+
+
+Box-sizing
+
+content-box - width only applies to content of the block. They add to total width
+border-box - width stays confined
+*/
+
+.padd{
+	height: 300px;
+	width: 200px;
+	background-color: orange;
+	border: 5px solid black;
+	padding:10px;
+	box-sizing: border-box;
+	
+
+}
+
+/*Margin
+
+outermost layer
+auto can be used to center. Auto can be used similar to mutiple px in one line
+
+*/
+
+.margin{
+	height: 200px;
+	width: 200px;
+	background-color: orange;
+	border: 5px solid black;
+	padding:10px;
+	margin-left: auto;
+	margin-right:  ;
+	
+	
+
+}
+
+.margin-2{
+	height: 200px;
+	width: 200px;
+	background-color: blue;
+	border: 5px solid yellow;
+	margin-top: 20px;
+	
+	
+	
+
+}
+
+
+/*
+Background Properties
+
+displays up and down the div
+background-repeat: repeat-x;
+background-repeat: repeat-y;
+
+background-repeat: no-repeat;
+
+
+background-position: right top;
+background-position: right bottom;
+background-position: right center;
+
+Default is scroll. Fixed lets the object float through the whole div block
+Need to be careful how you position. Can make image not visible.
+background-attachment: fixed;
+
+*/
+.background{
+	height: 400px;
+	width: 400px;
+	background-color: orange;
+	background-image: url(../img/soccer.png);
+	background-size: 100px auto;
+	background-repeat: no-repeat;
+	background-position: center top;
+	margin: 0	auto;
+	background-attachment: fixed;
+	
+}
+
+
+
+/* position 
+
+default
+position: static;
+
+
+
+gives you control on div placement. browser window is reference
+position: absolute;
+left: 70px;
+
+lets you move relative to original position
+position: relative;
+left: 70px;
+
+
+
+Fixed position relative to browser window. 
+Lets you do things like put menu in place
+
+position:fixed;
+left: 70px;
+top: 40px;
+
+
+
+*/
+
+
+.position-1{
+	height: 100px;
+	width:  100px;
+	background-color: orange;
+}
+
+.position-2{
+	height: 100px;
+	width:  100px;
+	background-color: green;
+	position:fixed;
+	left: 70px;
+	top: 40px;
+	
+}
+
+.position-3{
+	height: 100px;
+	width:  100px;
+	background-color: blue;
+
+}
+
+/*
+Nested div
+
+postition:absolute will look for the closest parent block 
+with position relative and use that as the reference for placement
+
+If no parent block exists with relative then it will use the browser window.
+
+Fixed always goes from edge of window
+*/
+
+.position-4{
+	height: 400px;
+	width:  400px;
+	background-color: orange;
+	position: relative;
+	left: 70px;
+	top: 40px;
+
+
+}
+
+.position-5{
+	height: 100px;
+	width:  100px;
+	background-color: green;
+	position: absolute;
+	left: 70px;
+	top: 40px;
+
+}
+
+
+
+
+
+.position-6{
+	height: 100px;
+	width:  100px;
+	background-color: red;
+	
+
+}
+
+.position-7{
+	height: 100px;
+	width:  100px;
+	background-color: green;
+	position: absolute;
+	left: 50px;
+	top: 50px;
+	
+
+}
+
+/*
+
+
+*/
+
+.position-8{
+	height: 100px;
+	width:  100px;
+	background-color: blue;
+	position: fixed;
+	top: 50px;
+	left:50px;
+	
+
+}
+.wrapper{
+	position: relative;
+	border: 1px solid #000;
+	width: 300px;
+	height: 300px;
+	left: 200px;
+}
+
+/*
+z-index
+
+controls positioning of blocks relative to eachother
+highest number is in front
+
+by default it orders the same as the html code
+
+
+z-index can be positive or negative
+*/
+
+.z-index-1{
+	width: 100px;
+	height: 100px;
+	background-color: orange;
+	position: relative;
+	z-index: 1;
+}
+
+.z-index-2{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	position: relative;
+	z-index: 3;
+}
+
+.z-index-3{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	position: relative;
+	left: 70px;
+	bottom: 150px;	
+	z-index: 2;
+}
+
+/*display
+default
+display:block;
+
+horizontal blocks
+display:inline-block;
+
+diplayed in a row but size of blocks fits the size of the content
+display:inline;
+
+When you need to hide a block
+display:none;
+
+*/
+
+.display-1{
+	background-color: orange;
+	height: 100px;
+	width: 100px;
+	display:inline-block;
+}
+.display-2{
+	background-color: green;
+	height: 100px;
+	width: 100px;
+	display:inline-block;
+}
+
+.display-3{
+	background-color: blue;
+	height: 100px;
+	width: 100px;
+	display:inline-block;
+}
+
+/*
+
+gradient
+ 2 gradiant types
+
+ linear-gradiant(50deg,yellow,blue) one side to the other. 
+ 3 arguments, 0 degrees has first value on bottom w horizontal split
+
+ radial-gradient(circle,red,black) from the center out
+ takes circle or ellipse as 1st arg or no value defaults to circle
+
+You can also generate custom from the web
+https://colorzilla.com/gradient-editor/
+*/
+
+
+
+.gradient-1{
+	background-image: linear-gradient(0deg,yellow,blue);
+	height: 500px;
+	width: 500px;
+	
+}
+.gradient-2{
+	background-image: radial-gradient(circle,red,black);
+	height: 500px;
+	width: 500px;
+	
+}
+
+.gradient-3{
+	/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#efc5ca+0,691977+38,ba2737+38,56ea54+51,f18e99+100 */
+background: rgb(239,197,202); /* Old browsers */
+background: -moz-radial-gradient(center, ellipse cover,  rgba(239,197,202,1) 0%, rgba(105,25,119,1) 38%, rgba(186,39,55,1) 38%, rgba(86,234,84,1) 51%, rgba(241,142,153,1) 100%); /* FF3.6-15 */
+background: -webkit-radial-gradient(center, ellipse cover,  rgba(239,197,202,1) 0%,rgba(105,25,119,1) 38%,rgba(186,39,55,1) 38%,rgba(86,234,84,1) 51%,rgba(241,142,153,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: radial-gradient(ellipse at center,  rgba(239,197,202,1) 0%,rgba(105,25,119,1) 38%,rgba(186,39,55,1) 38%,rgba(86,234,84,1) 51%,rgba(241,142,153,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#efc5ca', endColorstr='#f18e99',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+
+	height: 400px;
+	width: 800px;
+	
+}
+
+
+
+
+.display-1{
+	background-color: orange;
+	height: 100px;
+	width: 100px;
+	display:inline-block;
+}
+.display-2{
+	background-color: green;
+	height: 100px;
+	width: 100px;
+	display:inline-block;
+}
+
+.display-3{
+	background-color: blue;
+	height: 100px;
+	width: 100px;
+	display:inline-block;
+}
+
+
+
+/*border radius
+
+rounds edges of borders in the amount of pixels
+
+can specify multiple values and it will apply to borders
+
+starts at top left clockwise
+
+can also be a percentage 50% gets you a circle or an ellipse depending on div block
+
+border-radius: 50%;
+
+
+*/
+
+.border-radius{
+	width: 200px;
+	height: 200px;
+	background: yellow;
+	border: 5px solid grey;
+	border-radius: 40px 20px 10px 0;
+}
+
+/* box shadow
+
+adds shadows to elements
+
+
+3 values
+x-offset, y-offset, color
+box-shadow: 10px -10px grey;
+
+
+4 values- blur is how blurry it is
+x-offset, y-offset, blur-radius, color
+box-shadow: 10px -10px 5px grey;
+
+5 values- spread is how much shadown is spread out
+x-offset, y-offset, blur-radius, spread,color
+box-shadow: 10px -10px 5px 6px grey;
+
+
+inset shades on the inside
+box-shadow:inset 0px 0px 5px 6px grey;
+
+you can add multiple shadows seperated by comma
+box-shadow:inset 0px 0px 5px 6px grey, 0 0 red;
+*/
+
+.box-shadow{
+	width: 200px;
+	height: 200px;
+	background: yellow;
+	box-shadow:inset 0px 0px 5px 6px grey, 0 0 5px 6px red;
+	
+}
+
+
+
+/*opacity
+
+rgbAlfa - gives color opacity
+rgba(0,0,255,0.5)
+
+or just add opacity
+
+opacity:0.5;
+
+
+Main differnce is that opacity will make things like the text 
+and other content opaque
+
+*/
+
+.opacity-1{
+	width: 400px;
+	height: 400px;
+	background: green;
+	border-radius: 50%;
+	
+}
+
+.opacity-2{
+	width: 400px;
+	height: 400px;
+	background:rgba(0,0,255,0.5);
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	left: 300px;
+	
+}
+
+/*advanced selectors
+Child selector - X Y
+Immidiate child - X > Y Only Elements immidiately under the one you look at
+X Y Z - similar to X Y with multiple elements
+X + Y 2 Items on the same level. Only grabs 1st if multiple
+X ~ Y Multiple Items on the same level. 
+* all items
+
+x[attribute] - input[type=text]
+= exact match
+^= begins with
+$= ends with
+*= has value anywhere
+
+any A tag with an href beggining with https
+a[href ^=https]
+
+any a tag ending ing org
+a[href $=org]
+
+
+ul a{
+	background: rgba(255,255,0);
+}
+*/
+
+
+/*
+pseudo classes
+
+Links
+
+:link{} unvisited links
+:visited{} visited links
+
+
+
+a:link{
+	color: red;
+}
+
+a:visited{
+	color: yellow;
+}
+
+:hover{} actions when hover
+
+:active{} elements that are active
+
+
+a{
+	display: block;
+	width: 200px;
+	height: 50px;
+	background: #4444ff;
+	color: #fff;
+	font-family: Arial;
+	font-size: 24px;
+	text-align: center;
+	padding-top: 10px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	text-decoration: none;	
+
+}
+
+a:hover{
+	background:#3333cc;
+}
+
+a:active{
+	background:#2222cc;
+	box-shadow: 0 0 20px rbga(0,0,0, 0.8);
+
+}
+
+*/
+
+/*
+Forms
+
+:focus{} when in the input box
+checked for checkboxes
+valid and invalid for formatting
+enabled disabled for enabled and disabled states
+*/
+
+input{
+	outline: none;
+	font-size: 18px;
+}
+
+.inp-1:focus{
+	box-shadow: 0 0 10px rgba(0,0,0,0.8);
+}
+
+
+#inp-2:checked + label{
+	color:#ff0000;
+	background:#ffff00;
+}
+
+.inp-3:valid{
+	border: 3px solid #00ff00;
+}
+
+
+.inp-3:invalid{
+	border: 3px solid #ff0000;
+}
+
+.inp-4:enabled{
+	color: blue;
+}
+
+.inp-4:disabled{
+	color: red;
+}
+
+
+
+/*
+positions
+:first-child
+:last-child
+:nth-child(3) also works with odd even etc...
+
+:first-of-type
+:last-of-type
+:nth-of-type()
+
+main difference is that child has to be same type and position. 
+Type just needs to be of type
+
+
+
+p{
+	font-size: 20px;
+	color: blue;
+}
+p:first-child{
+	color:red;
+}
+
+p:last-child{
+	color:yellow;
+}
+
+p:nth-child(3n){
+	color:purple;
+}
+
+
+
+p:first-of-type{
+	color:green;
+}
+
+p:last-of-type{
+	color:yellow;
+}
+
+p:nth-of-type(3n-1){
+	color:blue;
+}
+*/
+
+/*
+Other pseudo classes
+:not() items that are not 
+:empty if item is empty
+:target - stylize the target of a link wehen you arive on the link
+*/
+
+/*
+p{
+	font-size: 50px;
+}
+li{
+	font-size: 20px;
+}
+
+
+li:not(:first-child){
+	color:red;
+}
+
+li:not(:hover){
+	color: green;
+}
+li:empty{
+	height: 20px;
+	background: yellow;
+}
+
+
+h1:target{
+	background:yellow;
+}
+*/
+
+
+/*
+Psuedo Elements
+
+need a content item
+
+::before
+::after
+::first-letter
+::first-line
+
+*/
+
+
+/*
+p::before{
+	content: "Start";
+	display: block;
+	width: 100px;
+	height: 100px;
+}
+
+p::after{
+	content: "";
+	font-size: 0px;
+	width: 100%
+	height: 1px;
+	border-top: 5px solid grey;
+	display: block;
+	margin-top: 10px;
+}
+
+p::first-line{
+	color: orange;
+}
+p::first-letter{
+	color: purple;
+}
+*/
+
+
+/* Transform
+
+transform:rotate(20deg);
+transform:scale(2); doubles in size, can also use multiple parameters for  w x h
+transform:translate(30px,20px); move block doesn't affect neighbor elements
+transform:skew(45deg); skews object by deg
+transform:rotateX(180deg);
+transform:rotateY(180deg); Rotates on y axis. 180 can flip image around
+
+Nice to use with hover actions
+
+*/
+
+.block{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	font-family: Arial;
+	font-size: 26px;
+	border: 10px solid grey;
+	margin: 100px 0 0 200px;
+	padding-top: 60px;
+	box-sizing: border-box;
+
+	transform: rotate(20deg);
+	transform: scale(2);
+	transform:translate(30px,20px);
+
+}
+
+
+/*transition
+transtion-property: all; any element.works with alll
+transition-duration: 12s;
+Optional
+transition-delay: 2s; - delay before animation
+transition-timing-function: ease-in;
+
+List of timing transition functions
+https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function
+
+
+Work with transition
+:hover
+:focus
+:active
+
+
+can also do shorthand like borders. 
+multiple properties seperated by comma
+can use "all"
+
+transition: width 2s linear,
+			height 2s linear;
+
+transition: all 2s linear;			
+
+*/
+
+.block-2{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	font-family: Arial;
+	font-size: 26px;
+	border: 10px solid grey;
+	margin: 100px 0 0 200px;
+	padding-top: 60px;
+	box-sizing: border-box;
+	transition: all 2s linear;
+
+	
+
+}
+.block-2:hover{
+	transition-duration: 2s;
+	transition-property: width;
+	transition-timing-function: cubic-bezier(.29, 1.01, 1, -0.68);
+	width: 400px;
+}
+
+
+
+.block-3{
+	width: 200px;
+	height: 200px;
+	background-color: yellow;
+	font-family: Arial;
+	font-size: 26px;
+	border: 10px solid grey;
+	margin: 100px 0 0 200px;
+	padding-top: 60px;
+	box-sizing: border-box;
+	transition: all 2s linear;
+	text-align: center;
+
+	
+
+}
+.block-3:hover{
+	
+	width: 400px;
+	transform: rotateY(360deg);
+}
+
+
+/*HTML 5 semantic tags
+
+Better classification tags
+<header> - <nav>
+<aside> - side menus
+<main> - <article>/<section>
+<footer>
+
+
+
+*/
