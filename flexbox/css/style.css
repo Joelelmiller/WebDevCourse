@@ -1,0 +1,150 @@
+
+
+/*  
+flex-direction: column;
+flex-direction: column-reverse;
+flex-direction: row;
+flex-direction: row-reverse;
+
+*/
+/*
+.container{
+	display:flex;
+	flex-direction: column;
+}
+
+
+
+.block{
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	border: 1px solid red; 
+	font-size: 30px;
+	color: white;
+}
+*/
+
+
+/*
+justify-content
+flex-start - alingned to main axis left to right
+flex-end - alingned to main axis right to left
+space-between - left middle right spacing
+space-around - padded left middle right
+center - all centered
+*/
+
+
+/*
+.container{
+	display:flex;
+	justify-content: space-around;
+}
+
+.block{
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	border: 1px solid red; 
+	font-size: 30px;
+	color: white;
+}
+
+*/
+/*
+align-items
+used for vertical alignment
+
+flex-start
+center
+stretch
+baseline
+*/
+/*
+.container{
+	display:flex;
+	align-items: baseline;
+}
+
+.block{
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	border: 1px solid red; 
+	font-size: 30px;
+	color: white;
+}
+*/
+
+
+/*align-self
+
+for individual item placement
+
+order lets you arrange box orders*/
+
+/*
+.container{
+	display:flex;
+	height: 400px;
+
+}
+
+.block{
+	width: 150px;
+	height: 150px;
+	background-color: orange;
+	border: 1px solid red; 
+	font-size: 30px;
+	color: white;
+}
+
+.block-2{
+	align-self: center;
+
+}
+
+.block-3{
+	align-self: flex-end;
+}
+
+*/
+
+
+
+/*
+flex-grow lets you make items take up whole div
+
+
+flex-basis lets you limit minimum size of blocks
+flex-shrink lets one item shrink faster than other
+*/
+.container{
+	display:flex;
+	height: 400px;
+	border: 6px solid black;
+	
+	
+	
+
+}
+
+.block{
+	
+	height: 150px;
+	width: 300px;
+	background-color: #3fb5ae;
+	border: 1px solid red; 
+	font-size: 30px;
+	color: white;
+	text-align: center;
+	flex-grow: 1;
+	
+	
+}
+
+.block-2{
+	flex-shrink: 4;
+	
+}

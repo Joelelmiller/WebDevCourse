@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--Doctype and html block always included -->
+
+	<!--Head displays in tab and specifies charset -->
+	<head>
+		<title>Bootstrap</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		
+	</head>
+	<body>
+		<!--Bootstrap has 12 columns to a grid 
+			5 grid options for different devices
+			xs < 576 pixels wide 
+			sm >576 
+			md - tablet > 768
+			lg laptop > 992
+			xl desktop >1200 -->
+
+		<!-- row is like wrapper 
+				you can make blocks with size and number of columns
+				xs class has no abbreviation. just col-12 -->
+			<div class="row">
+				<div class="col-xl-12">A</div>
+			</div>
+
+		<!-- 3 Divs of equal length on mobile
+				Smaller sizes apply up to larger ones-->
+		<div class="row">
+			<div class="col-4">A</div>
+			<div class="col-4">B</div>
+			<div class="col-4">C</div>
+		</div>
+		<div class="row">
+			<div class="col-6">D</div>
+			<div class="col-6">E</div>
+		</div>
+
+		<!-- Example of different div for different screen size-->
+		<div class="row">
+			<div class="col-4 col-lg-6">Heeyyy</div>
+			<div class="col-4 col-lg-3">Yaaaaa</div>
+			<div class="col-4 col-lg-3">Heyyyy</div>
+		</div>
+
+		<!-- container-fluid vs container table listed below
+			container will limit to specific pixel size
+		-->
+		<div class="container">
+			<div class="row">
+				<div class="col-4">size > 1200</div>
+				<div class="col-4">container-fluid</div>
+				<div class="col-4">container</div>
+			</div>
+			<div class="row">
+				<div class="col-4">xl >1200</div>
+				<div class="col-4">100%</div>
+				<div class="col-4">1140px</div>
+			</div>
+			<div class="row">
+				<div class="col-4">lg >992</div>
+				<div class="col-4">100%</div>
+				<div class="col-4">960px</div>
+			</div>
+			<div class="row">
+				<div class="col-4">md >768</div>
+				<div class="col-4">100%</div>
+				<div class="col-4">720px</div>
+			</div>
+				<div class="row">
+				<div class="col-4">sm >576</div>
+				<div class="col-4">100%</div>
+				<div class="col-4">540px</div>
+			</div>
+
+
+				<div class="row">
+				<div class="col-4">xs <576</div>
+				<div class="col-4">100%</div>
+				<div class="col-4">100%</div>
+			</div>
+		</div>
+
+
+
+<!-- column wrapping if a block doesn;t fit in a current row it will be moved to next and the space will be empty-->
+<div class="row">
+	<div class="col-md-4 col-lg-4">A</div>
+	<div class="col-md-4 col-lg-4">B</div>
+	<div class="col-md-6 col-lg-4">C</div>
+</div>
+
+<!--Offset  you can offset the start column like below-->
+<div class="row">
+	<div class="col-lg-4 offset-lg-3">NANANANANANA</div>
+</div>
+<div class="row">
+	<div class="col-lg-4 offset-lg-5">NANANANANANA</div>
+</div>
+<div class="row">
+	<div class="col-lg-2 offset-lg-10">BATTTTTMANNNNNN</div>
+</div>
+
+<div class="row">
+	<div class="col-4 offset-4">BATTTTTMANNNNNN</div>
+</div>
+
+
+<!--You can subdivide rows into other ngroups of 12 with another row div -->
+<div class="row">
+	<div class="col-lg-12">
+		<div class="row">
+			<div class="col-lg-6">A</div>
+			<div class="col-lg-6">B</div>
+		</div>
+	</div>
+</div>
+
+	</body>
+
+
+
+</html>
